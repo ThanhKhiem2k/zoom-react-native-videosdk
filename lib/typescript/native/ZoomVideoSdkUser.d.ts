@@ -1,0 +1,48 @@
+import { ZoomVideoSdkVideoStatus } from './ZoomVideoSdkVideoStatus';
+import { ZoomVideoSdkAudioStatus } from './ZoomVideoSdkAudioStatus';
+import { ZoomVideoSdkVideoStatisticInfo } from './ZoomVideoSdkVideoStatisticInfo';
+import { ZoomVideoSdkShareStatisticInfo } from './ZoomVideoSdkShareStatisticInfo';
+import type { ShareStatus } from './ZoomVideoSdk';
+export declare type ZoomVideoSdkUserType = {
+    userId: string;
+    customUserId: string;
+    userName: string;
+    isHost: boolean;
+    isManager: boolean;
+    hasMultiCamera: boolean;
+    multiCameraIndex: string;
+    getIsHost: () => Promise<boolean>;
+    getIsManager: () => Promise<boolean>;
+    getUserName: () => Promise<string>;
+    getShareStatus: () => Promise<ShareStatus>;
+    videoStatus: ZoomVideoSdkVideoStatus;
+    audioStatus: ZoomVideoSdkAudioStatus;
+    videoStatisticInfo: ZoomVideoSdkVideoStatisticInfo;
+    shareStatisticInfo: ZoomVideoSdkShareStatisticInfo;
+    getUserVolume: (userId: string, isSharing: boolean) => Promise<number>;
+    setUserVolume: (userId: string, isSharing: boolean, volume: number) => Promise<boolean>;
+    canSetUserVolume: (userId: string, isSharing: boolean) => Promise<boolean>;
+    hasIndividualRecordingConsent: (userId: string) => Promise<boolean>;
+};
+export declare class ZoomVideoSdkUser implements ZoomVideoSdkUserType {
+    userId: string;
+    customUserId: string;
+    userName: string;
+    isHost: boolean;
+    isManager: boolean;
+    hasMultiCamera: boolean;
+    multiCameraIndex: string;
+    videoStatus: ZoomVideoSdkVideoStatus;
+    audioStatus: ZoomVideoSdkAudioStatus;
+    videoStatisticInfo: ZoomVideoSdkVideoStatisticInfo;
+    shareStatisticInfo: ZoomVideoSdkShareStatisticInfo;
+    constructor(user: ZoomVideoSdkUserType);
+    getUserName(): Promise<any>;
+    getShareStatus(): Promise<any>;
+    getIsHost(): Promise<any>;
+    getIsManager(): Promise<any>;
+    getUserVolume(userId: string, isSharing: boolean): Promise<any>;
+    setUserVolume(userId: string, isSharing: boolean, volume: number): Promise<any>;
+    canSetUserVolume(userId: string, isSharing: boolean): Promise<any>;
+    hasIndividualRecordingConsent(userId: string): Promise<any>;
+}
