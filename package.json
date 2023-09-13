@@ -46,6 +46,7 @@
     "registry": "https://registry.npmjs.org/"
   },
   "devDependencies": {
+    "typescript": "^5.2.2"
   },
   "peerDependencies": {
     "react": "*",
