@@ -1,4 +1,4 @@
-import type {LiveTranscriptionOperationType} from "react-native-zoom-video-sdk";
+import type {LiveTranscriptionOperationType} from "react-native-idb-video-sdk";
 
 export type ZoomVideoSdkLiveTranscriptionMessageInfoType = {
     messageID: string;

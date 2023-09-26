@@ -1,14 +1,19 @@
 {
+  //Các tùy chọn biên dịch TypeScript.
   "compilerOptions": {
     "baseUrl": "./",
+    // Đường dẫn cơ sở
     "paths": {
-      "react-native-zoom-video-sdk": ["./src/index"]
+      "react-native-idb-video-sdk": ["./src/index"]
     },
+    //"react-native-idb-video-sdk" là một bí danh được định nghĩa để trỏ đến tệp "./src/index" 
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
+    // "declarationMap": false,
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
+    "forceConsistentCasingInFileNames": true, //Đảm bảo các tên tệp trong dự án phải sử dụng kiểu viết thường (lowercase) đồng nhất
     "jsx": "react",
+    // "jsx": "react-native",
     "lib": ["esnext"],
     "module": "esnext",
     "moduleResolution": "node",
@@ -17,8 +22,11 @@
     "noImplicitUseStrict": false,
     "noStrictGenericChecks": false,
     "noUnusedLocals": true,
+    //Tùy chọn này khiến TypeScript tắt hoặc bật cảnh báo cho các biến cục bộ (locals) không được sử dụng
     "noUnusedParameters": true,
+    //Tùy chọn này khiến TypeScript tắt hoặc bật cảnh báo cho các tham số hàm không được sử dụng.
     "resolveJsonModule": true,
+    //Cho phép TypeScript giải quyết module JSON. Điều này có nghĩa là bạn có thể import hoặc require các tệp JSON như một module.
     "skipLibCheck": true,
     "strict": true,
     "target": "esnext"

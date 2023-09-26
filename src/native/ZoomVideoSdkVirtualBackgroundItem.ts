@@ -1,4 +1,4 @@
-import type {ZoomVideoSDKVirtualBackgroundDataType} from "react-native-zoom-video-sdk";
+import type {ZoomVideoSDKVirtualBackgroundDataType} from "react-native-idb-video-sdk";
 
 export type ZoomVideoSdkVirtualBackgroundItemType = {
     filePath: string;

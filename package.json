@@ -1,6 +1,6 @@
 {
-  "name": "@zoom/react-native-videosdk",
-  "version": "1.7.5",
+  "name": "@idb/react-native-videosdk",
+  "version": "0.0.1",
   "description": "A react-native wrapper for Zoom Video SDK",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -13,7 +13,7 @@
     "android",
     "ios",
     "cpp",
-    "react-native-zoom-video-sdk.podspec",
+    "react-native-idb-video-sdk.podspec",
     "!lib/typescript/example",
     "!android/build",
     "!ios/build",
@@ -60,7 +60,6 @@
   "jest": {
     "preset": "react-native",
     "modulePathIgnorePatterns": [
-      "<rootDir>/example/node_modules",
       "<rootDir>/lib/"
     ]
   },
@@ -131,7 +130,15 @@
     ]
   },
   "dependencies": {
+    "@react-native-community/netinfo": "^9.4.1",
     "assert": "^2.0.0",
+    "react-native-gesture-handler": "^2.8.0",
+    "react-native-indicator": "^1.2.2",
+    "react-native-keyboard-area": "^1.0.6",
+    "react-native-paper": "^5.10.1",
+    "react-native-permissions": "3.2.0",
+    "react-native-pure-jwt": "2.2.2",
+    "react-native-reanimated": "^2.16.0",
     "yarn": "^1.22.18"
   }
 }
